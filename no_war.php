@@ -60,24 +60,24 @@
 }
 </style>
 <div class="col-md-12 text-center">	  
-<div id="popup">	    
-  <figure>
-          <figcaption>НЕТ ВОЙНЕ!</figcaption>
+  <div id="popup">	    
+    <figure>
+      <figcaption>НЕТ ВОЙНЕ!</figcaption>
         <div>
-                     <img src="./images/ukr.png" height="200" width="350">
-            <br>
-                   <strong>Мы против войны и их инициаторов!</strong><br><br>
-      </div>
-  </figure>
-</div>
+          <img src="ukr.png" height="200" width="350">
+          <br>
+          <strong>Мы против войны и их инициаторов!</strong><br><br>
+        </div>
+    </figure>
+  </div>
 </div>
 <script>
-window.onkeyup = okno; // нажатие Esc, см. условие "e.keyCode==27" 
-document.getElementById('popup').onclick = okno;
+  window.onkeyup = okno; // нажатие Esc, см. условие "e.keyCode==27" 
+  document.getElementById('popup').onclick = okno;
 
-function okno(e) {
-  if (e.target.nodeName != 'DIV' && e.target.nodeName != 'FIGCAPTION' && e.target.nodeName != 'IMG' && e.target.nodeName != 'FIGURE' && e.target.nodeName != 'BR' || !e.keyCode==27) { // через && перечисляются теги, клинкув на которые окно не будет закрыто; сюда же можно включить тег A или IFRAME 
-    document.getElementById('popup').style.display='none';
+  function okno(e) {
+    if (e.target.nodeName != 'DIV' && e.target.nodeName != 'FIGCAPTION' && e.target.nodeName != 'IMG' && e.target.nodeName != 'FIGURE' && e.target.nodeName != 'BR' || !e.keyCode==27) { // через && перечисляются теги, клинкув на которые окно не будет закрыто; сюда же можно включить тег A или IFRAME 
+      document.getElementById('popup').style.display='none';
+    }
   }
-}
 </script>
